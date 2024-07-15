@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            numbers: '#505050', textCSec: '#686868', deepBlue: "#0b3558", backG: "#dbe2ea", bondary: "#dee5ec", funcBtn: "#d4d4d2", calKeys: "#ff9500",
+            backG2: "#232d36", backG3: "#25313d", funcBtn2: "#d3d3d1", 
+          },
+
+        }
+      }
+    }
+  </script>
+  <title>Calculator-Interface</title>
+</head>
+<body class="bg-backG">
+    <div class="flex justify-center">
+        <div class="w-[400px] h-[710px] bg-white p-[5px] m-10 rounded-3xl relative top-[70px]">
+            <div class="border-4 border-bondary rounded-3xl h-[700px] w-[390px] p-[10px] box-border overflow-hidden">
+                <div class="flex justify-between w-[100%] items-center">
+                    <p class="font-semibold">9:41</p>
+                    <div class="flex">
+                        <img src="./images/network-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                        <img src="./images/network-wireless-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                        <img src="./images/battery-4-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                    </div>
+                </div>
+                <div class="w-[100%] h-[180px] flex my-2 pd-[30px]">
+                    <img src="./images/moon-night-mode-space-rocket-svgrepo-com.svg" alt="" class="h-[25px]">
+                    <div class="w-[95%] self-end place-contents-end pr-4">
+                        <p class="text-[18px] text-end">56x3-6+58</p>
+                        <p class="text-[26px] text-end font-bold">220</p>
+                    </div>
+                </div>
+                <div class="bg-[#f5f5f5] grid grid-rows grid-cols-4 gap-8 -mx-[10px] px-4 items-center py-[18px]">
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
+                        <p class="text-[25px] text-white relative">%</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
+                        <p class="text-[30px] text-white relative -top-[4px]">x</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
+                        <p class="text-[30px] text-white relative -top-[4px]">÷</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <img src="./images/backspace-svgrepo-com.svg" alt="" class="h-[30px]">
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">7</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">8</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">9</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[5px]">-</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">4</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">5</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">6</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[4px]">+</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">1</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">2</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">3</p>
+                    </div>
+                    <div class="h-[145px] w-[60px] bg-calKeys flex rounded-full items-center justify-center row-span-2">
+                        <p class="text-[40px] text-white relative -top-[4px]">=</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[30px] text-white">AC</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">0</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[12px]">.</p>
+                    </div>
+                    <!-- <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[4px]">=</p>
+                    </div> -->
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="w-[400px] h-[710px] bg-white p-[5px] m-10 rounded-3xl">
+            <div class="border-4 border-bondary rounded-3xl h-[700px] w-[390px] p-[10px] box-border overflow-hidden bg-backG2">
+                <div class="flex justify-between w-[100%] items-center ">
+                    <p class="font-semibold text-white">9:41</p>
+                    <div class="flex">
+                        <img src="./images/white network-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                        <img src="./images/white network-wireless-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                        <img src="./images/white battery-4-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
+                    </div>
+                </div>
+                <div class="w-[100%] h-[180px] flex my-2 pd-[30px]">
+                    <img src="./images/light-svgrepo-com.svg" alt="" class="h-[25px]">
+                    <div class="w-[95%] self-end place-contents-end pr-4">
+                        <p class="text-[18px] text-funcBtn2 text-end">56x3-6+58</p>
+                        <p class="text-[26px] text-white text-end font-bold">220</p>
+                    </div>
+                </div>
+                <div class="bg-backG3 grid grid-rows grid-cols-4 gap-8 -mx-[10px] px-4 items-center py-[18px]">
+                    <div class="h-[60px] w-[60px] bg-funcBtn2 flex rounded-full items-center justify-center">
+                        <p class="text-[25px]  relative">%</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-funcBtn2 flex rounded-full items-center justify-center">
+                        <p class="text-[30px]  relative -top-[4px]">x</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-funcBtn2 flex rounded-full items-center justify-center">
+                        <p class="text-[30px]  relative -top-[4px]">÷</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <img src="./images/backspace-svgrepo-com.svg" alt="" class="h-[30px]">
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">7</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">8</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">9</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[5px]">-</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">4</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">5</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">6</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[4px]">+</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">1</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">2</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">3</p>
+                    </div>
+                    <div class="h-[145px] w-[60px] bg-calKeys flex rounded-full items-center justify-center row-span-2">
+                        <p class="text-[40px] text-white relative -top-[4px]">=</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[30px] text-white">AC</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[34px] text-white">0</p>
+                    </div>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
+                        <p class="text-[40px] text-white relative -top-[12px]">.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
