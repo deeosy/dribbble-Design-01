@@ -1,0 +1,23 @@
+.elantraContainer{
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+.textContainer{
+
+}
+
+.text{
+	color: blueviolet;
+
+}
+
+img{
+	border-top-right-radius: 80px;
+
+}
+
+.dock, .town{
+	font-size: 25px;
+}

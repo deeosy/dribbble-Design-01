@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 98.8vh;
+    width: 96vw;
+    position: absolute;
+    left: 10px;
+    border: 5px solid black;
+    border-radius: 30px;
+    overflow-x: hidden;
+    margin: 0 20px;
+}
+
+body{
+    background-color: rgb(231, 237, 240);
+}
+
+.font1, h4, p, h1, h5, h6 {
+    font-family: "poppins";
+}
+.pad1 {
+    padding: 5px;
+}
+
+.logo > img{
+    height: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 10px 30px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    left: 20%;
+}
+
+.flexSVG{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    position: relative;
+    left: 20%;
+    margin: 7px 0px;
+}
+
+.svgImg img {
+    height: 17px;
+}
+
+.textTransform{
+    text-transform: uppercase;
+    font-weight: 300;
+    color: grey;
+}
+
+p{
+    color: rgb(60, 55, 55);
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+
+.textPnM{
+    padding: 5px; 
+}
+
+.inputE {
+    height: 30px;
+    width: 60%;
+    padding: 0px 13px;
+    border: 1px solid rgb(197, 190, 190);
+    border-radius: 5px;
+    background-color: rgb(245, 248, 250);
+}
+
+.btn {
+    height: 30px;
+    width: 20%;
+    color: whitesmoke;
+    border: 1px solid rgb(16, 16, 62);
+    border-radius: 5px;
+    background-color: rgb(16, 16, 62);  
+}
+
+.gridContainer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(13, 7%);
+    grid-template-rows: repeat(7, 13%);
+    gap: 2%;
+    height: 57vh;
+}
+
+.gd1{
+    grid-area: 3/1/4/3;
+    background-color: rgb(250, 248, 247);
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8%; 
+    position: relative;
+    left: -20px;   
+}
+
+
+.gd1 h5{
+    font-size: 0.8rem;
+}
+
+h6{
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+.gd1Btn {
+    margin: 3.5% 3.5%;
+    padding: 2%;
+    background-color: rgb(250, 248, 247);
+    border: 1px solid rgb(235, 227, 223);
+}
+
+.gd2 {
+    grid-area: 3/3/5/5;
+    background-color: rgb(250, 248, 247);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15px; 
+    top: -15px;
+}
+
+.gd2Img {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 2% 5% 2% ;
+}
+
+.dP{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.gd2Btn {
+    margin: 5% 0px;
+    height: fit-content;
+    padding: 2%;
+    color: whitesmoke;
+    border: 1px solid rgb(16, 16, 62);
+    border-radius: 5px;
+    background-color: rgb(16, 16, 62);
+}
+
+.followers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -8px;
+}
+
+hr{
+    color: black;
+    width: 60%;
+    margin: 0 auto 3%;
+    padding: auto;   
+}
+
+.loc{
+    display: flex;
+    align-items: center;
+
+}
+.loc > img{
+    margin-right: 4px;
+}
+
+.gd3 {
+    grid-area: 1/5/5/7;
+    background-color: rgb(250, 248, 247);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    left: 28px; 
+    top: -15px;
+}
+
+.instaLogo {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.gd3 > h5, .gd3 > h6 {
+    padding: 4px;
+
+}
+.gd3 > button > img {
+    height: 10px;
+}
+.gd3 > button {
+    width: fit-content;
+    padding: 3px;
+    margin: 12px 0;
+    color: whitesmoke;
+    border: 1px solid rgb(16, 16, 62);
+    border-radius: 5px;
+    background-color: rgb(16, 16, 62);
+}
+
+.gd4 {
+    grid-area: 2/7/5/10;
+    background-color: rgb(250, 248, 247);
+    display: flex;
+    padding: 25px;
+    position: relative;
+    left: 45px; 
+    top: -15px;
+}
+
+.mNLogo{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.mNText {
+    padding: 20px ;
+}
+
+.mNText > h5 {
+    font-weight: 300;
+}
+
+.dDBtn{
+    height: 15px;
+}
+.install {
+    font-size: 18px;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 50px;
+    border-radius: 3px;
+    border: 1px solid rgb(197, 193, 193);
+    background-color: rgb(250, 248, 247);
+}
+
+.gd5 {
+    grid-area: 1/10/5/12;
+    background-color: rgb(250, 248, 247);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 65px; 
+    top: -15px;
+}
+
+.mailLogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.mailLogo > img {
+    height: 50px;
+    width: 50px;    
+}
+
+.gd5 > h5, .gd5 > h6 {
+    text-align: center;
+    padding: 10px 12px;
+}
+
+.gd5 > .textPnM {
+    padding: 0px 12px;
+}
+.gd5 input {
+    width: 100%;
+    
+}
+
+.gd6 {
+    grid-area: 4/1/8/3;
+    background-color: rgb(250, 248, 247);
+    position: relative;
+    left: -20px; 
+    top: 15px;
+}
+
+.gd7 {
+    grid-area: 5/3/8/6;
+    background-color: rgb(250, 248, 247);
+    padding: 20px;
+    position: relative;
+    left: 10px; 
+    
+}
+
+.gd7 > h4{
+    padding: 5px 0px;
+}
+
+.gd8 {
+    grid-area: 5/6/8/8;
+    background-color: rgb(250, 248, 247);
+    background-color: rgb(23, 16, 236);
+    position: relative;
+    left: 35px;
+    top: 5px;   
+}
+
+.interLogo {
+    display: flex;
+    justify-content: center; 
+    margin: 2% 0 4% 0 ;
+}
+
+.intercom {
+    height: 40px;
+    width: 60px;
+    
+}
+
+.gd8 {
+    color: white;
+    text-align: center;
+}
+
+.gd8 > h5, .gd8 > h6 {
+    margin: 0px 5px;
+} 
+
+.interBtn{
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: rgb(17, 15, 81);
+    color: rgb(250, 248, 247);
+    border: 0;
+    font-size: 12px;
+}
+
+.gd9 {
+    grid-area: 5/8/8/11;
+    background-color: rgb(250, 248, 247);
+    padding: 0px 14px;
+    position: relative;
+    left: 60px; 
+    
+}
+
+.gd2BtnCon{
+    display: flex;
+    justify-content: end;
+}
+
+.project{
+    display: flex;
+}
+
+.project > .dP {
+    margin-right: 12px;
+}
+
+.gd9 .gd2Btn {
+    padding: 5px 20px;
+}
+
+.thick {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+span{
+    font-weight: 300;
+    
+}
+
+.blue{
+    color: blue;
+}
+
+.gd10 {
+    grid-area: 5/11/8/12;
+    background-color: rgb(250, 248, 247);
+    position: relative;
+    left: 75px;
+}
+
+.bG{
+    border-radius: 4px; 
+}
+
+.bG:hover{
+    outline-color: blue;
+}
+
+@media (min-width: 319px) and (max-width: 650px) {
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        width: 97vw;
+        overflow-y: scroll;
+    }
+
+    .flex{
+        position: relative;
+        left: 10px;
+    }
+
+   .container{
+    margin: 0;
+    position: absolute;
+    left: 0;
+    background-color: rgb(241, 164, 134);
+    width: 95vw;
+    overflow-y: hidden;
+   }
+
+    .mobile-col{
+        display: flex;     
+    }
+
+    .flex{
+        width: 80%;
+    }
+
+    .mobile-col > .textPnM{
+        font-size: 17px;
+    }
+
+    .btn{
+        width: 30%;
+    }
+
+    .svgImg{
+        left: 0px;
+        margin: 0 4px;
+    }
+
+    .svgImg > img {
+        padding: 0 5px;
+    }
+
+    .bG{
+        left: 0;
+        top: 0;
+    }
+
+  }
+
+  /* @media (min-width: 651px) and (max-width: 1025px) {
+    .container{
+      background-color: rgb(246, 240, 188);
+      margin: 0;
+      left: 0;
+    }
+    .flex{
+        position: relative;
+        left: 10px;
+    }
+
+    .mobile-col{
+        display: flex;     
+    }
+
+    .flex{
+        width: 80%;
+    }
+    .mobile-col > .textPnM{
+        font-size: 17px;
+    }
+    .btn{
+        width: 30%;
+    }
+    .svgImg{
+        left: 0px;
+        margin: 0 4px;
+    }
+    .svgImg > img {
+        padding: 0 5px;
+    }
+    .bG{
+        left: 0;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(246, 240, 188)
+    }
+  } */

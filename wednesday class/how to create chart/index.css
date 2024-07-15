@@ -1,0 +1,39 @@
+#myChart {
+    padding: 0px 25px;
+    width: 100% !important;
+    
+    height: 250px !important;
+    /* width: calc(100% - 20px); */
+  }
+
+  #small {
+    padding: 0px 25px;
+    width: 100% !important;
+    
+    height: 60px !important;
+    /* width: calc(100% - 20px); */
+  }
+
+  #smallB {
+    padding: 0px 25px;
+    width: 100% !important;
+    
+    height: 60px !important;
+    /* width: calc(100% - 20px); */
+  }
+
+  #smallC {
+    padding: 0px 25px;
+    width: 100% !important;
+    
+    height: 60px !important;
+    /* width: calc(100% - 20px); */
+  }
+
+  #smallD {
+    padding: 0px 25px;
+    width: 100% !important;
+    
+    height: 60px !important;
+    /* width: calc(100% - 20px); */
+  }

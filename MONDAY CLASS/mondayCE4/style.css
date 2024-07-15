@@ -1,0 +1,236 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.gridC{
+    display: grid;
+    height: 94vh;
+    width: 900px;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(9, 10%);
+    gap: 3%;
+    background-color: rgb(234, 226, 244);
+    padding: 50px;
+}
+.gridC div{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.gridC > div:first-child{
+    grid-area: 2/1/4/5;
+    margin-bottom: 5%;
+    padding: 1rem;
+}
+.gridC > div:nth-child(2){
+    grid-area: 2/5/3/9; 
+    width: 95%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.gridC > div:nth-child(3){
+    grid-area: 4/1/7/3; 
+    padding: 1rem;
+}
+.gridC > div:nth-child(4){
+    grid-area: 4/3/6/5;
+    height: 110%;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(234, 226, 244);
+}
+.gridC > div:nth-child(5){
+    grid-area: 3/5/6/9;
+    width: 85%; 
+    margin: 0% 0 0% 5%;
+    padding: 8% 5%;
+}
+.gridC > div:nth-child(6){
+    grid-area: 7/4/8/8; 
+    margin-top: -12%;
+    margin-left: -10%;
+    height: 100%;
+    width: 90%;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: rgb(75, 73, 73);
+    margin: 5% 1%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.65rem;
+    margin: 1%;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: rgb(75, 73, 73);
+    margin: 1%;
+}
+.searchB{
+    padding-right: 5%;
+}
+.searchB img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-left: 12%;
+}
+
+.flexR{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 50rem;
+    /* padding: 1% 2%; */
+    padding: 0.2em 0.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    margin: 1%;
+}
+
+li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    padding: 1%;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2%;
+}
+
+.imageName{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(237, 231, 231);
+    padding: 4%;
+    margin: 5% 0%;
+}
+
+.imageName:hover{
+    border: 0px;
+    box-shadow: 0px 10px 30px rgb(227, 222, 222);
+}
+.imageName > img{
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+#trendB{
+    display: flex;
+    justify-content: end;
+    background-color: rgb(234, 226, 244);  
+}
+#trendB > button{
+    padding: 5% 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.trendD{
+    height: 70%;
+    width: 90%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.trendD > p{
+    text-align: center;
+    padding: 0.5rem ;
+    width: 60%;
+    border-radius: 10px;
+}
+.trendD > p:hover {
+    background-color: rgb(240, 236, 246);
+}
+
+.cateC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cateF{
+    display: flex; 
+    align-items: center;
+    width: 28%;
+}
+.cateF > *{
+    padding: 0% 5%;
+}
+
+.cateO{
+    display: flex;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 212, 212);
+    padding: 3% 2%;
+}
+
+.count{
+    background-color: rgb(240, 236, 246);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.flexPicR1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picOutline{
+    border: 1px solid rgb(216, 212, 212);
+    width: 42%;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin-top: 3%;
+}
+
+.picOutline:hover{
+    border: 0px;
+    box-shadow: 0px 10px 30px rgb(227, 222, 222);
+}
+
+.picD{
+    width: 42%;
+    margin-left: 3%;
+}
+.picD>h4{
+    padding: 5% 0%;
+}
+.picFlexC img[src*='1']{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.picFlexC img[src*='2']{
+    border-bottom-left-radius: 5px;
+}
+.picFlexC img[src*='3']{
+    border-bottom-right-radius: 5px;
+}
+
+.picFlexC{
+    display: grid;
+    grid-template-columns: 25px 25px;
+    grid-template-rows: 25px 25px;
+    gap: 2px;
+}
+
+.picFlexC > div:first-child {
+    grid-column: span 2;
+}

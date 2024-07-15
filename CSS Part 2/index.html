@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Part-2</title>
+
+    <style>
+      
+        div{
+            background-color: aqua;
+        }
+
+        .one{
+            height: 15vh;
+        }
+
+        .two{
+            height: 8vh;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .row{
+            display: inline-flex;
+            flex-direction: column;
+            width: 33%;
+            height: 25vh;
+        }
+
+        .six{
+            height: 15vh;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .row{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 10px;
+
+            }
+            
+        }
+
+        @media (min-width: 601px) and (max-width:900px){
+            .row{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 10px;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three row">three</div>
+        <div class="four row">four</div>
+        <div class="five row">five</div>
+        <div class="six">six</div>
+</body>
+</html>

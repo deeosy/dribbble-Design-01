@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: 'blue', textCSec: '#686868', deepBlue: "#0b3558", checkBox: "#55d2ba",
+          },
+
+        }
+      }
+    }
+  </script>
+  <title>Calendly-Login</title>
+</head>
+<body>
+      <nav>
+        <div class="flex w-[70%] mx-[15%] mt-[2%] items-center justify-between gap-[100px]">
+            <div class="">
+              <a href="./index.html" class="flex items-center w-[25%]">
+                <img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[40px] mr-[10px]">
+                <h3 class="font-semibold text-[35px] text-clifford">Calendly</h3>
+              </a>                
+            </div>
+            <ul class="flex gap-5 justify-start w-[40%]">
+                <li><a href="./individuals.html" class="font-semibold">Individuals</a></li>
+                <li><a href="./teams.html" class="font-semibold">Teams</a></li>
+                <li><a href="./enterprise.html" class="font-semibold">Enterprise</a></li>
+            </ul>
+            <div class="flex w-[20%] justify-end mr-[1%] gap-4">
+              <a href="./Log-In.html">
+                <button class="text-[14px] border border-black h-[40px] px-5 rounded-2xl hover:bg-clifford hover:text-white hover:border-secondary">Log In</button>               
+              </a> 
+			  <a href="./Sign-Up.html">
+                <Button class="text-[14px] bg-black text-white border-0 h-[40px] px-5 rounded-2xl active:opacity-70">Sign Up</Button>
+              </a>              
+            </div>
+        </div>
+    </nav>
+	
+	<div class="flex justify-center items-center w-[80%] mx-[10%] h-[86vh] pt-[2%]">
+		<div class="absolute self-start place-self-start w-[80%] h-[70%]">
+			<img src="./images/blue-background.png" alt="blue blue background" class="h-[300px] absolute">
+		</div>
+		<div class="w-[80%] flex items-center border h-[70%] rounded-2xl relative z-10 bg-white shadow-2xl ">
+			<div class="w-[60%] py-5 px-6 z-10">
+				<div class=" w-[100%] my-[30%] ">
+					<div class="flex items-center">
+						<img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[40px] mr-[10px]">
+						<h3 class="font-semibold text-[35px] text-clifford">Calendly</h3>	
+					</div>	
+					<div class="flex flex-col items-center my-[10%]">
+						<h4 class=" text-[35px] text-black">Log In</h4>
+						<form action="" class="flex flex-col items-center mt-[5%] w-[80%]">
+							<input type="email" name="emailAddress" id="email" placeholder="name@company.com" class="w-[100%] px-[20px] py-[5px] rounded-md border outline-none">
+							<input type="button" value="Log In" class="mt-[5%] bg-clifford w-[100%] text-white px-[20px] py-[5px] rounded-md active:opacity-70">
+						</form>
+						<div class="flex w-[90%] ml-[10%] justify-between">
+							<a href="#" class=" flex mx-[] mt-[2%] ">
+								<h5 class=" text-[14px] text-clifford">Forgot Password?</h5>
+							</a>
+							<p class=" text-[14px] text-textCSec mx-[10%] mt-[2%]">
+								Don't have an account? <a href="" class="text-[14px] text-clifford ">Sign-Up</a>
+							</p>
+						</div>
+						
+					</div>
+					<div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="w-[40%] h-[100%] flex flex-col items-center justify-center bg-[#f6f8f9] rounded-2xl">
+				<img src="./images/Calendly-singin-package-img.webp.png" alt="" class="h-[150px] w-[180px] mb-4">
+				<h4 class=" text-[22px] text-textCSec mb-4">Your plan includes</h4>
+				<div class="flex text-checkBox items-center mb-3 ">
+					<img src="./images/check-circle-svgrepo-com.svg" alt="checkbox icon" class="h-[20px] mr-[10px]">
+					<h5 class=" text-[18px] text-textCSec">Unlimited task and projects</h5>
+				</div>
+				<div class="flex text-checkBox items-center mb-2">
+					<img src="./images/check-circle-svgrepo-com.svg" alt="checkbox icon" class="h-[20px] mr-[10px]">
+					<h5 class=" text-[18px] text-textCSec">Awesome time management</h5>
+				</div>
+				<div class="flex text-checkBox items-center mb-2">
+					<img src="./images/check-circle-svgrepo-com.svg" alt="checkbox icon" class="h-[20px] mr-[10px]">
+					<h5 class=" text-[18px] text-textCSec">Expand Clientele</h5>
+				</div>
+				<div class="flex text-checkBox items-center mb-2">
+					<img src="./images/check-circle-svgrepo-com.svg" alt="checkbox icon" class="h-[20px] mr-[10px] hidden">
+					<h5 class=" text-[18px] text-textCSec">Plus much more...</h5>
+				</div>	
+			</div>		
+		</div>
+		<div class="absolute flex w-[80%] place-content-end h-[70%]">
+			<img src="./images/blue-polka-dot-pattern-login-img.jpg" alt="" class="h-[300px] absolute self-end place-self-end">
+		</div>
+	</div>
+    <section id="footer">
+        <footer>
+          <div class="bg-slate-50 w-[100%] h-[3%] px-[10px] mt-[10px] flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="./index.html" class="flex items-center">
+                <img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[20px] mr-[10px]">
+                <h3 class="font-semibold text-[15px] text-clifford">Calendly</h3>
+              </a>
+          </div>
+            <p>Copyright @ 2024 Calendly</p>
+          </div>
+        </footer>
+      </section> 
+	
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+
+
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script  src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+
+const ctx = document.getElementById('myChart');
+    
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [{
+          label: 'Income ($)',
+          data: [230, 210, 150, 280, 230, 270,350, 250, 170, 280, 240, 280],
+          borderWidth: 1,
+          
+      }, {
+          type: 'line',
+          label: 'Cost',
+          data: [180, 180, 110, 170, 190, 210, 200, 130, 120, 150, 180, 150],
+          
+      }],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    }); 
+</script>

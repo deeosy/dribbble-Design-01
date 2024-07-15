@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: 'blue', textCSec: '#686868', deepBlue: "#0b3558", checkBox: "#55d2ba",
+          },
+
+        }
+      }
+    }
+  </script>
+  <title>Calendly-Login</title>
+</head>
+<body>
+      <nav>
+        <div class="flex w-[70%] mx-[15%] mt-[2%] items-center justify-between gap-[100px]">
+            <div class="">
+              <a href="./index.html" class="flex items-center w-[25%]">
+                <img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[40px] mr-[10px]">
+                <h3 class="font-semibold text-[35px] text-clifford">Calendly</h3>
+              </a>                
+            </div>
+            <ul class="flex gap-5 justify-start w-[40%]">
+                <li><a href="./individuals.html" class="font-semibold">Individuals</a></li>
+                <li><a href="./teams.html" class="font-semibold">Teams</a></li>
+                <li><a href="./enterprise.html" class="font-semibold">Enterprise</a></li>
+            </ul>
+            <div class="flex w-[20%] justify-end mr-[1%] gap-4">
+              <a href="./Log-In.html">
+                <button class="text-[14px] border border-black h-[40px] px-5 rounded-2xl hover:bg-clifford hover:text-white hover:border-secondary">Log In</button>               
+              </a>
+              <a href="./Sign-Up.html">
+                <Button class="text-[14px] bg-black text-white border-0 h-[40px] px-5 rounded-2xl active:opacity-70">Sign Up</Button>
+              </a>           
+              
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>

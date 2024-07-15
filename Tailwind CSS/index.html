@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+   
+  <div>
+    When controlling the flow of text, using the CSS property
+    <span class="inline">display: inline</span>
+    will cause the text inside the element to wrap normally.
+  
+    While using the property <span class="inline-block">display: inline-block</span>
+    will wrap the element to prevent the text inside from extending beyond its parent.
+  
+    Lastly, using the property <span class="block">display: block</span>
+    will put the element on its own line and fill its parent.
+  </div>
+
+  <div class="">
+    <h1 class="inline-block">Tailwind CSS</h1>
+    <p class="inline-block">When controlling the flow of text, using the CSS property</p>
+  </div>
+  <div class="">
+    <h1 class="inline">Tailwind CSS</h1>
+    <p class="inline">When controlling the flow of text, using the CSS property</p>
+  </div>
+
+  <div class="p-4">
+    <div class="flow-root">
+      <div class="my-4">Well, let me tell you something, ...</div>
+    </div>
+    <div class="flow-root ...">
+      <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+    </div>
+  </div>
+
+  <img src="../MONDAY CLASS/mondayCE2/dog-img.jpg" alt="" class="self-center w-5 h-5 rounded-full mx-1" />
+  <img src="./Red, blue and Yellow.png" alt="pic" class="h-17 w-14 self-center mx-6 rounded-br-xl">
+  <div>
+    <div class="w-36 h-16 bg-sky-400 opacity-20 rounded-lg"></div>
+    <div class="-mt-8 mx-10 bg-sky-300 inline-block rounded-md p-2 ">-mt-8</div>
+  </div>
+  <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+    Save changes
+  </button>
+  
+  <button class="rounded-full bg-black text-white px-4 py-1 m-2 hover:bg-gray-400 hover:text-black hover:opacity-80 hover:shadow ">Save Changes</button>
+</body>
+</html>

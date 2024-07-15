@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d', ivy: "blue", primary: "blue",
+            },
+            fontSize: { 
+                h1Text: "100px",
+            },
+            margin: {
+                heroMargin: "100px",
+            },
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 class="text-h1Text font-bold underline text-primary m-heroMargin">
+    Hello world!
+  </h1>
+</body>
+</html>

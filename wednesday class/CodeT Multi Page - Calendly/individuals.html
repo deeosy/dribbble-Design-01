@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: 'blue', textCSec: '#686868', deepBlue: "#0b3558",
+            },           
+            }
+        }
+        }
+    </script>
+    <title>Calendly-Individuals</title>
+</head>
+<body>    
+    <nav>
+        <div class="flex w-[70%] mx-[15%] mt-[2%] items-center justify-between gap-[100px] ">
+            <div class="">
+              <a href="./index.html" class="flex items-center w-[25%]">
+                <img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[40px] mr-[10px]">
+                <h3 class="font-semibold text-[35px] text-clifford">Calendly</h3>
+              </a>                
+            </div>
+            <ul class="flex gap-5 justify-start w-[40%]">
+                <li><a href="./individuals.html" class="font-semibold">Individuals</a></li>
+                <li><a href="./teams.html" class="font-semibold">Teams</a></li>
+                <li><a href="./enterprise.html" class="font-semibold">Enterprise</a></li>
+            </ul>
+            <div class="flex w-[20%] justify-end mr-[1%] gap-4">
+                <a href="./Log-In.html">
+                    <button class="text-[14px] border border-black h-[40px] px-5 rounded-2xl hover:bg-clifford hover:text-white hover:border-secondary">Log In</button>               
+                </a>
+                <a href="./Sign-Up.html">
+                    <Button class="text-[14px] bg-black text-white border-0 h-[40px] px-5 rounded-2xl active:opacity-70">Sign Up</Button>
+                  </a> 
+            </div>
+        </div>
+    </nav>
+    <section id="genius">
+        <div class="flex w-[70%] mx-[15%] mt-[2%]">
+            <div class="w-[35%] flex flex-col my-[20px]">
+                <h2 class="text-[50px] font-bold leading-[60px]">The genius way to work <span class="text-clifford">better</span></h2>       
+                <p class="text-[16px] my-[20px] leading-9">Calendly makes it easy to work smarter when you're working solo. Meetings, sessions and appointments 
+                    become more efficient ways to achieve success and accomplish goals.
+                </p>
+                <button class="px-4 py-1 bg-black text-white w-[34%] rounded-full text-[14px] hover:shadow-xl hover:bg-clifford active:opacity-70">Sign up for free</button>
+            </div>
+            <div class="relative w-[60%] px-[10%] mt-[2%]">
+                <img src="./images/Calendly-individual-img1.webp" alt="lady holding a laptop" class="">               
+            </div>
+        </div>
+    </section>
+    <section id="efficient">
+        <div class="flex w-[70%] mx-[15%] mt-[2%]">
+            <div class="relative w-[60%] px-[10%] mt-[2%]">
+                <img src="./images/Calendly-individual-img2.webp" alt="lady typing on her phone" class="">               
+            </div>
+            <div class="w-[35%] flex flex-col my-[20px]">
+                <p class="uppercase text-[14px] text-textCSec">A curated calendar</p>
+                <h2 class="text-[30px] font-bold ">Book up efficiently</h2>       
+                <p class="text-[16px] my-[20px] leading-9">When invitees select a meeting slot from your schedule, they only see the times you are
+                    available, and only the lenght and type of meetings you want to have. Your schedule fills up efficiently, and everyone avoids excess
+                    email exchanges.
+                </p>
+            </div>        
+        </div>
+    </section>
+    <section id="personalAssitant">
+        <div class="flex w-[70%] mx-[15%] mt-[2%]">
+            <div class="w-[35%] flex flex-col my-[20px]">
+                <p class="uppercase text-[14px] text-textCSec">Automated notifications and follow-ups</p>
+                <h2 class="text-[30px] font-bold ">Work like you have personal assitant</h2>       
+                <p class="text-[16px] my-[20px] leading-9">Because Calendly automates administrative task like sending reminder, emails and 
+                    follow-ups, you can focus on the work that builds your business and brings customers back for more.
+                </p>
+            </div> 
+            <div class="relative w-[60%] px-[10%] mt-[2%]">
+                <img src="./images/Calendly-individual-img3.webp" alt="lady typing on her phone" class="">               
+            </div>                   
+        </div>        
+    </section>
+    <section id="pricePlan">
+        <div class="relative my-[50px]">
+            <img src="./images/Calendly-price-bG.webp" alt="" class="h-[400px] w-[100%] object-cover absolute">
+            <p class="relative top-[65px] text-white text-[50px] left-[100px] w-[30%] flex flex-col">
+                Find just-right plans for individuals and small teams
+                <button class="px-4 py-1 bg-white text-black w-[34%] rounded-full text-[16px] my-[15px] relative hover:shadow-xl hover:text-white hover:bg-clifford active:opacity-80">See our plans</button>
+            </p>            
+        </div>
+    </section>
+    <section id="aboutUs">
+        <div class="w-[80%] mx-[10%] mt-[150px] mb-[50px] flex justify-between gap-5">
+            <div class="w-[25%]">
+                <h2 class="text-[30px] font-bold ">Easy <br><span class="text-clifford">ahead</span></h2>
+                <p class="text-[16px] my-[20px] leading-9 text-textCSec">We take the work out of connecting with others so you can accomplish more.</p>
+                <div class="border px-5 py-1 rounded-md border-black w-[65%] flex items-center">                    
+                    <input list="languages" name="language" id="language" placeholder="English" class="font-semibold outline-none">
+                    <datalist id="languages">
+                        <option value="English">
+                        <option value="French">
+                        <option value="Spanish">                    
+                    </datalist>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-[24px] font-bold mb-[10px]">About</h3>
+                <p class="text-[16px] text-textCSec mb-[10px]">About Calendly</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Contact Sales</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Newsroom</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Careers</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Security</p>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-[24px] font-bold mb-[10px]">Solutions</h3>
+                <p class="text-[16px] text-textCSec mb-[10px]">Customer Success</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Sales</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Recruiting</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Education</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Marketing</p>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="text-[24px] font-bold mb-[10px]">Popular Features</h3>
+                <p class="text-[16px] text-textCSec mb-[10px]">Embed Calendly</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Availability</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Sending Notification</p>
+                <p class="text-[16px] text-textCSec mb-[10px]">Using Calendly Mobile</p>                
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <footer>
+          <div class="bg-slate-50 w-[100%] h-[3%] px-[10px] mt-[10px] flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="./index.html" class="flex items-center">
+                <img src="./images/cubes-svgrepo-com.svg" alt="logo" class="h-[20px] mr-[10px]">
+                <h3 class="font-semibold text-[15px] text-clifford">Calendly</h3>
+              </a>
+          </div>
+            <p>Copyright @ 2024 Calendly</p>
+          </div>
+        </footer>
+      </section>    
+</body>
+</html>

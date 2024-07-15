@@ -1,0 +1,255 @@
+.gradient-background {
+    background: linear-gradient(300deg, #9bc0cc, #babaab, #c6c7c9);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5% 25%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footNav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.backG{
+    background-color: rgb(249, 244, 244);
+}
+
+p, label, h1{
+    font-family: Roboto, RobotoDraft, Helvetica, Arial;
+}
+
+h1{
+    font-weight: 400;
+}
+
+label{
+    margin: 0px 6px;
+}
+
+h1{
+    margin-left: 6px;
+}
+
+.headB > p {margin-left: 6px;}
+
+.border{
+    border: 1px solid rgb(19, 15, 15);
+}
+
+.required{
+    margin: 0;
+    color: red;
+    border-bottom:  0px;
+    border-left: 0px;
+    border-right: 0;
+    
+}
+.blue{
+    height: 10px; 
+    background-color: rgb(136, 80, 80);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.email-div, .intro-texts {
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+
+.headB{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.headB > p {
+    margin-bottom: 15px;
+
+}
+
+.email{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 20px;
+    width: 30%;
+    border-color: brown;
+    border-radius: 5px;
+}
+
+.radioB{
+    width: 15px;
+}
+sup{
+    color: brown;
+    font-size: 1.0rem;
+   
+}
+
+* p{
+    margin: 5px;
+}
+
+.captcha{
+    color: rgb(158, 158, 158);
+    font-family: Roboto, RobotoDraft, Helvetica, Arial;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.pNT{
+    color: rgba(0, 0, 0, 0.66);
+    font-family: Roboto, RobotoDraft, Helvetica, Arial;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+
+.footerFont{
+font-family: Roboto, RobotoDraft, Helvetica, Arial;
+font-size: 11px;
+color: rgba(0, 0, 0, 0.66);
+}
+
+div > .fFSize{
+font-size: 17px;
+color: rgba(0, 0, 0, 0.66);
+}
+
+.clearF{
+    font-size: 15px;
+    color: rgb(32, 127, 205);
+}
+
+.pagesF{
+    font-size: 10px;
+    color:  rgba(0, 0, 0, 0.66);
+}
+
+.submitB{
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(32, 127, 205);
+    border: 0;
+    border-radius: 5px;
+}
+
+.footNav{
+    padding: 10px;
+}
+
+.neverS{
+    font-size: 12px;
+    margin: 10px 0px;
+}
+
+.gridC {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 10px 10px ;
+    gap: 5px;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.gridC1 {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.gridC2 {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gGle{
+    font-weight: 550;
+    
+}
+
+.gGleF{
+    font-size: 1.4rem;
+
+}
+
+.respM{
+    margin: 0px 6px;
+}
+
+.swhACC{
+    display: flex;
+}
+.cloud{
+    display: flex;
+    width: 44%;
+    align-items: center;
+    justify-content: end;
+}
+
+
+
+@media (min-width:340px) and (max-width:750px){
+    .footNav{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .h1-text{
+        font-size: 25px;
+    }
+
+    .respM{
+        width: 70%;
+        padding: 0px 5px;
+    }
+
+    form p, h1, label {
+        font-size: 10px;
+    }
+
+    .swhACC{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cloud{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+    }
+
+
+    
+}
