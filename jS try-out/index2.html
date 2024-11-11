@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<h3>Who is paying for Lunch</h3>
+<button onclick="whosPaying()">Draw</button>
+<p id="js-unlucky"></p>
+
+  <script>
+    
+    //Who is paying for lunch
+    function whosPaying() {
+        let friends = ["Angela", "Ben", "Jenny", "Michael", "Chloe","Walter","Issa"];
+        let randomName = Math.floor(Math.random()*friends.length);
+        document.querySelector('#js-unlucky').innerText = `${friends[randomName]} is paying for lunch today!`;
+    }
+
+  </script>
+</body>
+</html>

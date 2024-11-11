@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class work change backgroundColor with a click</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+   <button class="">
+    change background
+   </button>
+    
+
+
+
+    
+    <script>
+      const btn = document.querySelector('button');
+
+      const hexValues = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+
+      let randomNumb = () => {
+        // console.log(Math.random()* 16);
+        return Math.floor(Math.random()*hexValues.length);
+
+      }
+
+      btn.addEventListener('click', () => {
+        let hexColor = '#';
+
+        for(let i=0; i<6; i++) {
+          hexColor = hexColor+hexValues[randomNumb()];
+        }
+
+        console.log(hexColor);
+        document.body.style.backgroundColor = hexColor
+      })
+
+
+    </script>
+
+
+</body>
+</html>

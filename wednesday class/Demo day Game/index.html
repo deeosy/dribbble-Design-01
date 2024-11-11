@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/fantasy');
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="mt-[50px] mx-auto w-[700px] h-[600px] border-[4px] border-black rounded-lg p-[30px] relative left-0 overflow-hidden">
+    <img src="./images/bg.jpg" alt="background image" class="absolute -z-20 m-[-30px] object-cover h-[800px] w-[900px] translate-y-[-100px]">
+
+
+    <div class="w-[100%] h-[100%] bg-[#000000/90] absolute  -z-10 m-[-30px]"></div>
+    <p class="relative text-white text-center text-[80px] -mt-[10px] " style="font-family: 'Fantasy', sans-serif;"><span class="text-[#b8a254]">Heads</span>  or <span class="text-[#00698f]">Tails</span></p>
+
+    <div class="flex gap-[30px] -mt-[30px]">
+      <img src="./images/heads.png" alt="coin heads" onclick="playGame('heads')" class="h-[300px] relative cursor-pointer ">
+      <img src="./images/tails.png" alt="coin tails" onclick="playGame('tails')" class="h-[300px] relative cursor-pointer">
+    </div>
+
+    <div class="h-[40px] w-[90%] mx-auto bg-white relative mt-[10%] border-[3px] border-slate-900 rounded-md  ">
+      <p id="js-results" class="relative text-[24px] text-center"></p>
+    </div>
+    <div class="flex mx-auto justify-center gap-2">
+      <div class="h-[40px] w-[50%] bg-white relative mt-[1%] border-[3px] border-slate-900 rounded-md  ">
+        <p id="js-score" class="relative text-[20px] text-center">Score: Wins <span id="js-wins">0</span> Losses <span id="js-losses">0</span></p>
+      </div>
+      <button class="h-[40px] w-[16%] bg-white relative mt-[1%] border-[3px] border-slate-900 rounded-md" onclick="
+        score.wins = 0;
+        score.losses = 0;
+        localStorage.removeItem('score');
+        restartScore();
+        ">
+        Restart
+      </button>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <script src="./main.js"></script>
+</body>
+</html>

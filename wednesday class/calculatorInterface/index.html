@@ -34,80 +34,116 @@
                 <div class="w-[100%] h-[180px] flex my-2 pd-[30px]">
                     <img src="./images/moon-night-mode-space-rocket-svgrepo-com.svg" alt="" class="h-[25px]">
                     <div class="w-[95%] self-end place-contents-end pr-4">
-                        <p class="text-[18px] text-end">56x3-6+58</p>
-                        <p class="text-[26px] text-end font-bold">220</p>
+                        <p class="text-[18px] text-end" id="js-showInput"></p>
                     </div>
                 </div>
                 <div class="bg-[#f5f5f5] grid grid-rows grid-cols-4 gap-8 -mx-[10px] px-4 items-center py-[18px]">
-                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
-                        <p class="text-[25px] text-white relative">%</p>
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center cursor-pointer invisible " onclick="updateCalculation(' % ');">
+                        <p class="text-[25px] text-white relative">
+                            %
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
-                        <p class="text-[30px] text-white relative -top-[4px]">x</p>
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation(' * ');">
+                        <p class="text-[30px] text-white relative -top-[4px]">
+                            x
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center">
-                        <p class="text-[30px] text-white relative -top-[4px]">÷</p>
+                    <div class="h-[60px] w-[60px] bg-funcBtn flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation(' / ');">
+                        <p class="text-[30px] text-white relative -top-[4px]">
+                            ÷
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center cursor-pointer" id="js-backSpace" onclick="backSpaceEraser()" onkeydown="eraserLastInput(event)">
                         <img src="./images/backspace-svgrepo-com.svg" alt="" class="h-[30px]">
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">7</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('7');">
+                        <p class="text-[34px] text-white">
+                            7
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">8</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('8'); ">
+                        <p class="text-[34px] text-white">
+                            8
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">9</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('9'); ">
+                        <p class="text-[34px] text-white">
+                            9
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
-                        <p class="text-[40px] text-white relative -top-[5px]">-</p>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation(' - ');">
+                        <p class="text-[40px] text-white relative -top-[5px]">
+                            -
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">4</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('4')">
+                        <p class="text-[34px] text-white">
+                            4
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">5</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('5')">
+                        <p class="text-[34px] text-white">
+                            5
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">6</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('6')">
+                        <p class="text-[34px] text-white">
+                            6
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
-                        <p class="text-[40px] text-white relative -top-[4px]">+</p>
+                    <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation(' + ');">
+                        <p class="text-[40px] text-white relative -top-[4px]">
+                            +
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">1</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('1')">
+                        <p class="text-[34px] text-white">
+                            1
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">2</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('2')">
+                        <p class="text-[34px] text-white">
+                            2
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">3</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('3')">
+                        <p class="text-[34px] text-white">
+                            3
+                        </p>
                     </div>
-                    <div class="h-[145px] w-[60px] bg-calKeys flex rounded-full items-center justify-center row-span-2">
-                        <p class="text-[40px] text-white relative -top-[4px]">=</p>
+                    <div class="h-[145px] w-[60px] bg-calKeys flex rounded-full items-center justify-center cursor-pointer row-span-2" onclick="
+                        calculation = eval(calculation);
+                        showCalculation();" onkeydown="equal2Btn(event)">
+                        <p class="text-[40px] text-white relative -top-[4px]">
+                            =
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[30px] text-white">AC</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="
+                        calculation ='';
+                        showCalculation();
+                        localStorage.setItem('calculation', calculation);
+                    ">
+                        <p class="text-[30px] text-white">
+                            AC
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[34px] text-white">0</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('0')">
+                        <p class="text-[34px] text-white">
+                            0
+                        </p>
                     </div>
-                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center">
-                        <p class="text-[40px] text-white relative -top-[12px]">.</p>
+                    <div class="h-[60px] w-[60px] bg-numbers flex rounded-full items-center justify-center cursor-pointer" onclick="updateCalculation('.');">
+                        <p class="text-[40px] text-white relative -top-[12px]">
+                            .
+                        </p>
                     </div>
                     <!-- <div class="h-[60px] w-[60px] bg-calKeys flex rounded-full items-center justify-center">
                         <p class="text-[40px] text-white relative -top-[4px]">=</p>
                     </div> -->
-
-                    
-
                 </div>
-
             </div>
-
         </div>
-        <div class="w-[400px] h-[710px] bg-white p-[5px] m-10 rounded-3xl">
+        <!-- <div class="w-[400px] h-[710px] bg-white p-[5px] m-10 rounded-3xl">
             <div class="border-4 border-bondary rounded-3xl h-[700px] w-[390px] p-[10px] box-border overflow-hidden bg-backG2">
                 <div class="flex justify-between w-[100%] items-center ">
                     <p class="font-semibold text-white">9:41</p>
@@ -184,7 +220,60 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
+
+
+
+    <script>
+
+
+        /*this was the previous code (below) before the localStorage was added.*/
+        // let calculation = ' ';
+        
+        let calculation = localStorage.getItem('calculation') || " ";
+        // the code above after the localstorage was added
+        showCalculation()
+        // the function abouve will show the previous function on the screen if it hasnt been cleared yet from memory
+        function equal2Btn(event) {
+            if (event.key === 'Enter') {
+                calculation = eval(calculation);
+                showCalculation();
+            }
+        }
+
+        function eraserLastInput(event) {
+            if (event.key === 'Backspace' || event.key === 'Delete') {
+                return backSpaceEraser();
+            }
+        }
+
+
+
+        function backSpaceEraser() {
+            let value = document.getElementById("js-showInput");
+            value.innerText = value.innerText.slice(0, -1);
+        }
+        
+
+    
+        function updateCalculation(input) {      
+          calculation += input;
+          showCalculation();
+        //   return calculation;
+          // below we are adding a local storage to save the calculation incase the page is refreashed 
+          localStorage.setItem('calculation', calculation);
+
+        }
+    
+        function showCalculation() {
+          document.querySelector('#js-showInput').innerText = calculation;
+        }
+
+    
+      </script>
+
+
+
 </body>
 </html>

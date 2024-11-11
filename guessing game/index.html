@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+  <div class="">
+    <p>Guess a number from 0 to 5</p>
+
+    <input type="number" name="guessNumber" id="js-playerNumber" min="0" max="5" placeholder="Number" class="h-20px w-[100px] border rounded-md px-2" onkeydown="pressEnterKey(event)">
+
+    <input type="submit" class="border px-2" onclick="playerNumber()">
+
+    <p id="js-result"></p>
+
+    <p id="js-score"></p>
+
+
+
+
+    <script>
+      let pressEnterKey = (event) => {
+        if (event.key === 'Enter') {
+          playerNumber();
+        }
+      }
+
+
+
+      let playerNumber = () => {
+        let compuNumber =Math.floor(Math.random()*6);
+
+        let inputNumber = document.querySelector('#js-playerNumber');
+        inputNumber = Number(inputNumber.value);
+
+        let score = {
+          wins: 0,
+          losses: 0
+        }
+
+        if (compuNumber === inputNumber) {
+          result = 'You win!';
+          document.querySelector('#js-result').innerText = `Your Guess: ${inputNumber}, Computer Number: ${compuNumber}. ${result}`;
+
+        } else {
+          result = 'You lose!';
+          document.querySelector('#js-result').innerText = `Your Guess: ${inputNumber}, Computer Number: ${compuNumber}. ${result}`;
+        }  
+        
+        if (result === 'You win!') {
+          score.wins += 1;    
+        } else if (result === 'You lose!') {
+          score.losses += 1;
+        }
+        updateScore();
+      }
+
+      let updateScore = () => {
+        document.querySelector('#js-score').innerText = `Score
+wins: ${score.wins} losses: ${score.losses}`
+      }
+      
+
+ 
+
+    </script>
+
+  </div>
+</body>
+</html>

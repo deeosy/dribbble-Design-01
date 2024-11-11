@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- title -->
+    <title>GradeChecker</title>
+
+    <!-- google icons rounded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- google icons outlined -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#F2F2F2',
+                        secondaryColor: '#111',
+                        accentColor: '#2ecc71',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-primaryColor">
+  <!-- main container -->
+  <div>      
+    <main>
+            
+        <!-- <p class="text-2xl md:text-4xl font-bold text-center text-[#F2F2F2] mt-3">Aggregate Checker</p> -->
+        
+        <div class="w-[100%] h-[100dvh] flex flex-row items-center justify-center">
+            
+            <div class="flex flex-row items-center justify-center w-[90%] h-fit md:w-[50%] bg-primaryColor">
+        
+                <div class="flex flex-col items-center justify-center w-[100%] h-[100%] bg-[#FFFFFF] p-5 rounded-lg" id="hint">
+        
+                    <div class="flex flex-col gap-5">                            
+
+                        <p class="text-[red] font-bold">Instructions for Using the Grade Checker:</p>
+
+                        <p><span class="font-bold">Enter a Number:</span> Input a number between 1 and 9 (inclusive) to check your corresponding grade.</p>
+
+                        <p>
+                            <span class="font-bold">Understand the Grades:</span> 
+                            Each number corresponds to a specific grade: <br> 1 = A1 | 2 = B2 | 3 = B3 | 4 = C4 | 5 = C5 | 6 = C6| 7 = D7 | 8 = E8 | 9 = F8.
+                        </p>
+
+                        <p>
+                            <span class="font-bold">Receive Your Grade:</span>
+                            Entering your numbers to the input fields, the system will automatically calculate and give to instant feedback.
+                        </p>
+
+                        <p>
+                            <span class="font-bold">Invalid Input:</span>
+                            If you enter a number outside the range of 1 to 9, you will receive an error message:
+                            <span class="text-[red]">"Invalid input. Please enter a number between 1 and 9."</span>
+                        </p>
+
+                        <div>
+                            <input type="button" value="Continue" class="cursor-pointer py-1 px-2 rounded border bg-[#111] text-[#F2F2F2]" id="hintBtn">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="calcMainContainer" class="flex flex-row items-center justify-center w-[100%] h-[100%] bg-[#FFFFFF] p-5  rounded-lg hidden">
+                    
+                    <form action="" method="post">
+
+                        <div id="providedInfo" class="hidden">
+
+                            <div id="listInfo" class="font-bold"></div>
+                            <div id="listEng"></div>
+                            <div id="listMath"></div>
+                            <div id="listSci"></div>
+                            <div id="listSoc"></div>
+                            <div id="listFirBest"></div>
+                            <div id="listSecBest"></div>
+                            <div id="result" class="font-bold mt-3"></div>
+            
+                            <div>
+                                <input type="button" value="Done" class="cursor-pointer py-1 px-3 rounded border bg-[#111] text-[#F2F2F2] mt-3" id="providedInfoBtn">
+                            </div>
+
+                        </div>
+        
+                        <div id="calcContainer">
+
+                            <!-- error message -->
+                            <div id="error" class="border heading rounded border-0 text-[red] pl-2"></div>
+    
+                            <div class="flex flex-col md:flex-row items-center gap-2">
+                                <div class="w-[100%]">
+                                    <label for="english" class="uppercase md:text-[12px] pl-2">english</label>
+                                    <input type="number" id="english" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                                <div class="w-[100%]">
+                                    <label for="math" class="uppercase md:text-[12px] pl-2">mathematics</label>
+                                    <input type="number" id="math" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-col md:flex-row items-center gap-2">
+                                <div class="w-[100%]">
+                                    <label for="science" class="uppercase md:text-[12px] pl-2">science</label>
+                                    <input type="number" id="science" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                                <div class="w-[100%]">
+                                    <label for="social" class="uppercase md:text-[12px] pl-2">social</label>
+                                    <input type="number" id="social" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                            </div>
+    
+                            <div class="flex flex-col md:flex-row items-center gap-2">
+                                <div class="w-[100%]">
+                                    <label for="firstBest" class="uppercase md:text-[12px] pl-2">First best elective</label>
+                                    <input type="number" id="firstBest" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                                <div class="w-[100%]">
+                                    <label for="secondBest" class="uppercase md:text-[12px] pl-2">Second best elective</label>
+                                    <input type="number" id="secondBest" class="border rounded w-full bg-primaryColor mb-2 py-3 px-5 outline-none focus-within:border-accentColor">
+                                </div>
+                            </div>
+    
+                            <input type="button" value="Calculate Grade!" id="calculateBtn" class="rounded-lg bg-primaryColor hover:bg-accentColor hover:text-[#F2F2F2] w-full py-4 mt-3 cursor-pointer">
+
+                        </div>
+                
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+  </div>
+  
+  <script src="./script/checkGrade.js"></script>
+</body>
+</html>
