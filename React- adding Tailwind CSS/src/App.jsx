@@ -9,11 +9,10 @@ function App() {
   return (
     <>
       <div>
-        <h1 className='font-bold text-[30px]'>Hello World</h1>
+        <h1 className='bg-blue-gray-400'>Hello World</h1>
       </div>
     </>
   )
 }
 
 export default App
-yarn

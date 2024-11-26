@@ -12,7 +12,7 @@ export function NowhereCard() {
     <Card className="mt-6 w-96 bg-gray-600  group flex flex-col justify-between">
       <CardHeader color="blue-gray" className="relative h-94 group-hover:translate-y-[-10px] transition-all duration-300">
         <img
-          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw1hlcjGT5cssPhwm5UH9lpiaYGUzsGrcuFdoDZZZPyaUxi6-_"
+          src={`${props.image-src}`}
           alt="card-image" className="h-[450px] w-[360px] object-cover   "
         />
       </CardHeader>
