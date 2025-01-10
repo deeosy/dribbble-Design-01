@@ -4,36 +4,27 @@ import { useState } from 'react'
 
 
 function ContactForm(props) {
-  // console.log(props)
   const [name, setName] = useState('');
   const handleName = (e) => {
     setName(e.target.value)
   }
-
   const [phoneNumber, setPhoneNumber] = useState('');
   const handlePhoneNumber = (e) => {
     setPhoneNumber(e.target.value)
   }
-
   const [location, setLocation] = useState('')
   const handleLocation = (e) => {
     setLocation(e.target.value)
   }
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if(name.length > 0 && phoneNumber.length) {
       let contact = {name, phoneNumber, location, id:uuid(),}
       props.addContact(contact);
       setName("");
       setPhoneNumber("");
       setLocation("");
-
     }
-
-
-
   }
 
   return (
@@ -49,9 +40,8 @@ function ContactForm(props) {
           <small>Example: +1 234-567-8901</small>
         </div>
         <input value={location} onChange={handleLocation} type="text" placeholder='Location' className='border border-black py-1 rounded-md placeholder:text-center outline-none'/>
-        <input type="submit" value='Send' className='w-[30%] place-self-center border border-black rounded-md my-3 ' required/>
-      </form>
-    
+        <input type="submit" value='Send' className='w-[30%] place-self-center border border-black rounded-md my-3 '/>
+      </form>    
     </div>
   )
 }

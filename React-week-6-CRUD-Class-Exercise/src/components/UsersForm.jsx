@@ -14,7 +14,7 @@ export function UsersForm({addUser}) {
     setName(e.target.value)
   }
 
-  const handleEmail = (e) => {
+  const handleEmail = (e) => { 
     setEmail(e.target.value)
   }
 
