@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.playwrite-co-guides-regular {
+  font-family: "Playwrite CO Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
