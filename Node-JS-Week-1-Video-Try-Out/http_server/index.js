@@ -7,8 +7,9 @@ const handleAllRequests = (requestObject, responseObject) => {
   responseObject.write('This is your response. \n'); // first response Object \n is used to write on a new line
   responseObject.write('Another part of your response.'); // second response Object
   responseObject.write('<h1>this is my heading</h1>. \n \n \n '); // you can write html here as well
-
+    
   const url = requestObject.url;
+
   if(url === '/'){
     responseObject.write("<h1>Welcome to the home page</h1>")
   }else if(url === '/login'){

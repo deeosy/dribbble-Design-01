@@ -10,12 +10,17 @@ function App() {
 
   return (
     <>
-    <header>
-      {/* <Heading /> */}
-    </header>
-    <div className=" flex flex-col gap-5 mt-10 ">
-      <TodoForm  />
-      <TodoList tasks={tasks} />
+    <div className="flex flex-col">
+      <header>
+        <Heading />
+      </header>
+      <div className="w-[100%] flex justify-center ">
+        <div className="flex flex-col gap-5 mt-10 w-[260px] ">
+          <TodoForm  />
+          <TodoList tasks={tasks} />
+        </div>
+
+      </div>
     </div>
     </>
 

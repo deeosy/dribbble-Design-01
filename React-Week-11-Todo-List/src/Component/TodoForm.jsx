@@ -22,9 +22,9 @@ export default function TodoForm() {
 			setTaskEntry('');		
 		}
   return (
-    <div>
+    <div className='mx-auto w-[240px] ' >
 		<form onSubmit={handleEntrySubmit} className='flex gap-1 ' >
-			<div className="border rounded-md hover:border hover:border-blue-400">
+			<div className="border rounded-md hover:border hover:border-green-600">
 			<input value={taskEntry} onChange={handleTaskEntry} type="text" />
 
 			</div>
