@@ -24,7 +24,7 @@
         <div class="w-[400px] h-[710px] bg-white p-[5px] m-10 rounded-3xl relative top-[70px]">
             <div class="border-4 border-bondary rounded-3xl h-[700px] w-[390px] p-[10px] box-border overflow-hidden">
                 <div class="flex justify-between w-[100%] items-center">
-                    <p class="font-semibold">9:41</p>
+                    <p class="font-semibold time"></p>
                     <div class="flex">
                         <img src="./images/network-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
                         <img src="./images/network-wireless-svgrepo-com.svg" alt="" class="h-[18px] mr-2">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="w-[100%] h-[180px] flex my-2 pd-[30px]">
-                    <img src="./images/moon-night-mode-space-rocket-svgrepo-com.svg" alt="" class="h-[25px]">
+                    <img src="" alt="" class="h-[25px] mode">
                     <div class="w-[95%] self-end place-contents-end pr-4">
                         <p class="text-[18px] text-end" id="js-showInput"></p>
                     </div>
@@ -269,7 +269,23 @@
         function showCalculation() {
           document.querySelector('#js-showInput').innerText = calculation;
         }
-
+            // setting up the time feature
+        const updateTime = () => {
+            const d = new Date()
+            const hr = d.getHours().toString().padStart(2,'0') // ensures to digits clock
+            const min = d.getMinutes().toString().padStart(2,'0')
+            const sec = d.getSeconds().toString().padStart(2,'0')
+    
+            const time = document.querySelector(".time").innerText = `${hr}:${min}:${sec}`
+            
+            if (hr >= 19 || hr < 6){
+                document.querySelector(".mode").setAttribute('src', './images/moon-night-mode-space-rocket-svgrepo-com.svg')
+            } else{
+                document.querySelector(".mode").setAttribute('src', './images/light-svgrepo-com.svg')
+            }
+ 
+        }
+        setInterval(updateTime, 1000);
     
       </script>
 

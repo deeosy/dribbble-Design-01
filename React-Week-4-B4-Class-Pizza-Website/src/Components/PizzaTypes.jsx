@@ -2,10 +2,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
-  Avatar,
-  Tooltip,
 } from "@material-tailwind/react";
 import { allPizza } from "./typesOfPizza";
 

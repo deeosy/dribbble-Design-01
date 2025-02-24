@@ -18,20 +18,24 @@
 // allPizza.push(pepperoniPizza, vegetablePizza, meatPizza, cheesePizza)
 
 
-const typesOfPizza = [
-  {image: "https://worldlytreat.com/wp-content/uploads/2021/05/Italian-pepperoni-pizza-recipe-060-scaled.jpg",
+export const allPizza = [
+  { id:1,
+    image: "https://worldlytreat.com/wp-content/uploads/2021/05/Italian-pepperoni-pizza-recipe-060-scaled.jpg",
     title: "Pepperoni Pizza",
     description: "Pepperoni is made from a blend of beef and pork and is typically seasoned with salt, paprika, chili flakes or cayenne pepper, fennel seed and garlic. The seasoning gives pepperoni a peppery, savory taste while the fermentation process gives it a distinctly tangy flavor."
    },
-   {image: "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg",
+   {id:2,
+    image: "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg",
     title: "Vegetable Pizza",
     description: "Pepperoni is made from a blend of beef and pork and is typically seasoned with salt, paprika, chili flakes or cayenne pepper, fennel seed and garlic. The seasoning gives pepperoni a peppery, savory taste while the fermentation process gives it a distinctly tangy flavor."
    },
-   {image: "https://mikebakesnyc.com/wp-content/uploads/2022/08/Photo-Aug-15-1-42-41-PM-scaled.jpg",
+   {id:3,
+    image: "https://mikebakesnyc.com/wp-content/uploads/2022/08/Photo-Aug-15-1-42-41-PM-scaled.jpg",
     title: "Meat Pizza",
     description: "Pepperoni is made from a blend of beef and pork and is typically seasoned with salt, paprika, chili flakes or cayenne pepper, fennel seed and garlic. The seasoning gives pepperoni a peppery, savory taste while the fermentation process gives it a distinctly tangy flavor."
    },
-   {image: "https://thumbs.dreamstime.com/b/close-up-four-cheese-pizza-slice-close-up-shot-four-cheese-pizza-perfectly-melted-cheese-stretchy-gooey-ready-327216466.jpg",
+   {id:4,
+    image: "https://thumbs.dreamstime.com/b/close-up-four-cheese-pizza-slice-close-up-shot-four-cheese-pizza-perfectly-melted-cheese-stretchy-gooey-ready-327216466.jpg",
     title: "Cheese Pizza",
     description: "Pepperoni is made from a blend of beef and pork and is typically seasoned with salt, paprika, chili flakes or cayenne pepper, fennel seed and garlic. The seasoning gives pepperoni a peppery, savory taste while the fermentation process gives it a distinctly tangy flavor."
    },
